@@ -1,5 +1,6 @@
 """Remove Duplicate Files
 Copyright (c) 2012 Warren Moore <robowaz@gmail.com>
+https://github.com/robowaz/removeDuplicateFiles
 
 This software may be redistributed under the terms of the MIT License.
 See the file COPYING for details.
@@ -17,6 +18,10 @@ import hashlib
 # Constants
 
 VERSION_STRING = "1.0"
+DEFAULT_VERBOSE = False
+DEFAULT_PRUNE = True
+DEFAULT_DRY_RUN = False
+DEFAULT_DEBUG = False
 
 ##################################################################
 # Functions
@@ -115,12 +120,13 @@ def findDuplicates(options, directoryList):
     
 def main():
   applicationName = os.path.basename(__file__)
+  
   parserUsage = "Usage: %s [options] [directories]" % applicationName
   parser = OptionParser(usage = parserUsage, version = "%prog " + VERSION_STRING)
-  parserDefaults = {"verbose": False,
-                    "prune": True,
-                    "dryRun": False,
-                    "debug": False}
+  parserDefaults = {"verbose": DEFAULT_VERBOSE,
+                    "prune": DEFAULT_PRUNE,
+                    "dryRun": DEFAULT_DRY_RUN,
+                    "debug": DEFAULT_DEBUG}
   parser.set_defaults(**parserDefaults)
   parser.add_option("-v", "--verbose", action = "store_true", dest = "verbose", help = "verbose output [default: %default]")
   parser.add_option("-p", "--prune", action = "store_true", dest = "prune", help = "remove directories that have been emptied [default: %default]")
