@@ -1,9 +1,9 @@
 """Remove Duplicate Files
-Copyright (c) 2012 Warren Moore <robowaz@gmail.com>
-https://github.com/robowaz/removeDuplicateFiles
+Copyright (c) 2012 Warren Moore
+https://github.com/wamonite/removeDuplicateFiles
 
 This software may be redistributed under the terms of the MIT License.
-See the file COPYING for details.
+See the file LICENSE for details.
 """
 
 ##################################################################

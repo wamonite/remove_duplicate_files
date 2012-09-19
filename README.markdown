@@ -1,13 +1,11 @@
 # removeDuplicateFiles
 
-[Source Repository](https://github.com/robowaz/removeDuplicateFiles)
-
-## About
-
 I had a number of backups containing similar files. To make sure I only reviewed
 files once, I wrote this script to remove any duplicates. Files are deemed
 duplicates if they are in the same location, relative to the search directories,
 and have identical binary content.
+
+[source @ github](https://github.com/wamonite/removeDuplicateFiles)
 
 ## Usage
 
@@ -39,7 +37,13 @@ No extra modules required. Tested on Python 2.6 (OSX) and 2.7 (Linux).
 
 ## License
 
-Copyright (c) 2012 Warren Moore [robowaz@gmail.com]
+Copyright (c) 2012 Warren Moore
 
 This software may be redistributed under the terms of the MIT License.
-See the file COPYING for details.
+See the file LICENSE for details.
+
+## Contact
+
+          @wamonite     - twitter
+           \_______.com - web
+    warren____________/ - email
